@@ -11,7 +11,7 @@ internal static class Program
     [STAThread]
     static void Main()
     {
-        // Attach console window for debugging purpose
+        // Attach console window for debugging purpose.
         DebugConsole.Create(0, 0, 620, 240);
         Debug.Writeline("Debugging...")
         
