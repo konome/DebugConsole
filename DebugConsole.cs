@@ -16,16 +16,16 @@ namespace Konome
         static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x, int Y, int cx, int cy, int wFlags);
 
         [Conditional("DEBUG")]
-        public static void Create(int w = 0, int h = 0, int x = 0, int y = 0)
-            => Create(true, w, h, x, y);
+        public static void Create(int x = 0, int y = 0, int w = 0, int h = 0)
+            => Create(true, x, y, w, h);
 
-        public static void Create(bool debug, int w = 0, int h = 0, int x = 0, int y = 0)
+        public static void Create(bool debug, int x = 0, int y = 0, int w = 0, int h = 0)
         {
             if (debug)
             {
-                var flag = x == 0 && y == 0 ? 0x1 : 0x40;
+                var flag = w == 0 && h == 0 ? 0x1 : 0x40;
                 AllocConsole();
-                SetWindowPos(GetConsoleWindow(), 0, w, h, x, y, flag);
+                SetWindowPos(GetConsoleWindow(), 0, x, y, w, h, flag);
 
                 Trace.Listeners.Add(new ConsoleTraceListener());
                 Debug.WriteLine("Debugging...");
