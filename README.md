@@ -1,5 +1,5 @@
 # DebugConsole
-Attach a console window to a .NET project for debugging purposes. Useful for GUI projects such as WinForms and WPF.
+Attach a console window to a .NET project for debugging purposes. Useful while developing GUI projects such as WinForms and WPF.
 
 ## Sample
 ```csharp
