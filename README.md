@@ -1,7 +1,7 @@
-# DebugConsole.cs
+## DebugConsole.cs
 Attach a console window to a .NET project for debugging purposes. Useful for GUI projects such as WinForms and WPF.
 
-## Sample
+### Sample
 ```csharp
 internal static class Program
 {
