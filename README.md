@@ -1,4 +1,4 @@
-# Debug Console
+# debug console
 Attach a console window to a .NET project for debugging purposes. Useful while developing GUI projects such as WinForms and WPF.
 
 ## Sample
