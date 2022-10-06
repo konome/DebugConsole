@@ -1,3 +1,7 @@
+// Debug Console
+// Copyright (c) 2022 konome
+// MIT License
+
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
