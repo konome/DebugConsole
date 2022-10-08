@@ -27,7 +27,7 @@ namespace Konome
         {
             if (debug)
             {
-                var flag = w == 0 && h == 0 ? 0x1 : 0x40;
+                int flag = w == 0 && h == 0 ? 0x1 : 0x40;
                 AllocConsole();
                 SetWindowPos(GetConsoleWindow(), 0, x, y, w, h, flag);
 
