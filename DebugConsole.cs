@@ -32,6 +32,7 @@ namespace Konome
                 SetWindowPos(GetConsoleWindow(), 0, x, y, w, h, flag);
 
                 Trace.Listeners.Add(new ConsoleTraceListener());
+                Console.CursorVisible = false;
                 Debug.WriteLine("Debugging...");
             }
         }
