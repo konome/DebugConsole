@@ -13,7 +13,6 @@ internal static class Program
     {
         // Attach console window for debugging purpose.
         DebugConsole.Create(0, 0, 620, 240);
-        Debug.Writeline("Debugging...")
         
         ApplicationConfiguration.Initialize();
         Application.Run(new Form1());
